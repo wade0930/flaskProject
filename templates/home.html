@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Home PAGE{% endblock %}
+
+{% block main %}
+<div class="container">
+    <!-- {% for mesg in get_flashed_messages() %}
+      <h1>{{ mesg }}</h1>
+    {% endfor %} -->
+    <div class="card">
+        
+        <div class="card-header">
+            <h2>APL2瓦斯資料</h2>
+        </div>
+        
+        <div class="card-body">
+            <form action="/show" method="post">
+                <div class="form-group">
+                    <div class="row align-items-center justify-content-center mt-2">
+                            <div class="form-group">
+                                <label>選擇開始日期</label>
+                                <input  type="date" name="date_start" max="3000-12-31" 
+                                        min="1000-01-01" class="form-control-md">
+                            </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center mt-3 ">
+                        <div class="form-group">
+                            <label>選擇結束日期</label>
+                            <input type="date" name="date_end" max="3000-12-31" 
+                                    min="1000-01-01" class="form-control-md">
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center justify-content-center mt-2">
+                        <div class="custom-control custom-checkbox mr-2">
+                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked" name="check" value="true">
+                            <label class="custom-control-label" for="defaultUnchecked" >輸出成EXCEL</label>
+                        </div>
+                        
+                    </div>
+                    
+        
+                          
+                    <div class="row align-items-center justify-content-center mt-3">
+                        <button type="submit" class="btn btn-primary">查詢紀錄</button>
+                    </div>
+                </div>
+        
+            </form>    
+        </div>
+    
+    </div>
+</div>
+
+
+{% endblock %}
+
+{%block javascript %}
+<script src="../static/js/main.js"></script>
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<!-- {% block title %}This is a GAS PAGE{% endblock %} -->
+
+
+{% block main %}
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Gas Data</a>
+            <form class="form-inline my-2 my-lg-0" action="/logout">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">登出</button>
+            </form>
+        </nav>
+        {{ data.to_html(classes=" table table-bordered  table-hover") | safe}}
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

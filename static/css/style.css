@@ -1,0 +1,21 @@
+th{
+    text-align: center;
+    font-size: 14px;
+}
+
+td{
+    text-align: center;
+    font-size: 14px;
+}
+thead tr th{
+    position:sticky;
+    background: white;
+    color: black;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    top: 0;
+
+}
+h2{
+    text-align: center;
+}
