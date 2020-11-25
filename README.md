@@ -1,4 +1,4 @@
-# flaskProject
+# flaskProject Oracle Client為11g版本
 ## 要安裝套件  
 1.cx_oracle  
 2.flask  
